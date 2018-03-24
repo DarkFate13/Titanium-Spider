@@ -16,7 +16,7 @@ def parse(file_name):
 
 def scrape(website):
 	# request = urllib.request.Request(website)
-	headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+	headers = {'User-Agent': 'Mozilla/5 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 	req = Request(website, headers={'User-Agent': 'Mozilla/5.0'})
 	webpage = urlopen(req).read()
 	soup = BeautifulSoup(webpage, 'html.parser')
