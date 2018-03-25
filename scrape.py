@@ -26,5 +26,3 @@ if __name__ == "__main__":
 	print(parse(sys.argv[1]))
 	print(len(parse(sys.argv[1])))
 	print(scrape('http://www.holiday-weather.com/bangalore/averages/june/'))
-
-			
